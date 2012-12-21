@@ -19,6 +19,8 @@
 #ifndef __LINUX_RTNETLINK_H
 #define __LINUX_RTNETLINK_H
 #include <linux/types.h>
+#include <sys/socket.h>
+#include <linux/socket.h>
 #include <linux/netlink.h>
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 #include <linux/if_link.h>

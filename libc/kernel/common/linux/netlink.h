@@ -18,6 +18,8 @@
  ****************************************************************************/
 #ifndef __LINUX_NETLINK_H
 #define __LINUX_NETLINK_H
+#include <linux/types.h>
+#include <sys/socket.h>  
 #include <linux/socket.h>  
 #include <linux/types.h>
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
