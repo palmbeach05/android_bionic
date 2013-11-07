@@ -323,7 +323,6 @@ bool ElfReader::ReserveAddressSpace() {
 
   required_base_ = is_prelinked(fd_, name_);
 
-  int mmap_flags = MAP_PRIVATE | MAP_ANONYMOUS;
   if (required_base_ != 0)
     mmap_flags |= MAP_FIXED;
   void* start = mmap((void*)required_base_, load_size_, PROT_NONE, mmap_flags, -1, 0);
