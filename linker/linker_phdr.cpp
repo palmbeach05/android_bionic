@@ -318,7 +318,6 @@ bool ElfReader::ReserveAddressSpace() {
     return false;
   }
 
-  uint8_t* addr = reinterpret_cast<uint8_t*>(min_vaddr);
   int mmap_flags = MAP_PRIVATE | MAP_ANONYMOUS;
 
   required_base_ = is_prelinked(fd_, name_);
