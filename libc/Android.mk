@@ -202,6 +202,7 @@ libc_common_src_files += \
 libc_bionic_src_files := \
     bionic/abort.cpp \
     bionic/assert.cpp \
+    bionic/atof.cpp \
     bionic/brk.cpp \
     bionic/dirent.cpp \
     bionic/__errno.c \
@@ -239,6 +240,8 @@ libc_bionic_src_files := \
     bionic/strerror.cpp \
     bionic/strerror_r.cpp \
     bionic/strsignal.cpp \
+    bionic/strtof.cpp \
+    bionic/strtold.cpp \
     bionic/stubs.cpp \
     bionic/sysconf.cpp \
     bionic/tdestroy.cpp \
