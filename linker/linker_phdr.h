@@ -49,6 +49,7 @@ class ElfReader {
   size_t load_size() { return load_size_; }
   ElfW(Addr) load_bias() { return load_bias_; }
   const ElfW(Phdr)* loaded_phdr() { return loaded_phdr_; }
+  Elf32_Addr required_base() { return required_base_; }
 
  private:
   bool ReadElfHeader();
@@ -75,6 +76,10 @@ class ElfReader {
   size_t load_size_;
   // Load bias.
   ElfW(Addr) load_bias_;
+
+  // For prelinked libraries, mandatory load address of the first
+  // loadable segment. 0 otherwise.
+  Elf32_Addr required_base_;
 
   // Loaded phdr.
   const ElfW(Phdr)* loaded_phdr_;
